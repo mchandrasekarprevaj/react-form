@@ -1,7 +1,9 @@
+import { BookingForm } from './components'
+
 function App() {
   return (
     <div className="App">
-      TESTING REACT APP ON WORDPRESS
+      <BookingForm />
     </div>
   );
 }

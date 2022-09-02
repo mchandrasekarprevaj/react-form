@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "BookingForm", {
+Object.defineProperty(exports, "default", {
   enumerable: true,
   get: function get() {
     return _BookingForm.default;
