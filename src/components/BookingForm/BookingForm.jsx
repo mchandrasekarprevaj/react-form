@@ -12,6 +12,15 @@ const BookingForm = () => {
 
     }, [email, password])
 
+    const onSubmit = (values) => {
+
+        console.log('onSubmit', values)
+
+        const customEvent = new CustomEvent('message', { detail: values });
+        window.dispatchEvent(customEvent)
+
+    }
+
     return (
         <Formik
             initialValues={{ email: email, password: password }}
@@ -28,11 +37,8 @@ const BookingForm = () => {
                 }
                 return errors;
             }}
-            onSubmit={(values, { setSubmitting }) => {
-                setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
-                    setSubmitting(false);
-                }, 400);
+            onSubmit={async (values, { setSubmitting }) => {
+                await onSubmit(values)
             }}
         >
             {({
