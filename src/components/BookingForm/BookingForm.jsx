@@ -17,7 +17,7 @@ const BookingForm = () => {
         console.log('onSubmit', values)
 
         const customEvent = new CustomEvent('message', { detail: values });
-        window.dispatchEvent(customEvent)
+        dispatchEvent(customEvent)
 
     }
 
