@@ -3,12 +3,7 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react": "^6.24.1",
-    "formik": "^2.2.9",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "formik": "^2.2.9"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,12 +12,6 @@
     "eject": "react-scripts eject",
     "clean": "rimraf dist",
     "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
