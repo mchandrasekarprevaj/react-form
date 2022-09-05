@@ -53,7 +53,7 @@ var BookingForm = function BookingForm() {
     var customEvent = new CustomEvent('message', {
       detail: values
     });
-    window.dispatchEvent(customEvent);
+    dispatchEvent(customEvent);
   };
 
   return /*#__PURE__*/_react.default.createElement(_formik.Formik, {
